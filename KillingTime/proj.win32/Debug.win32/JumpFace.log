@@ -1,0 +1,31 @@
+﻿Build started 27/08/2014 1:40:22 SA.
+     1>Project "E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\JumpFace.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\..\..\..\cocos2dx" /I"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\..\..\..\cocos2dx\include" /I"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\..\..\..\cocos2dx\kazmath\include" /I"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\..\..\..\cocos2dx\platform\win32" /I"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\..\..\..\cocos2dx\platform\third_party\win32" /I"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\..\..\..\cocos2dx\platform\third_party\win32\OGLES" /I"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\..\..\..\external" /I"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\..\..\..\CocosDenshion\include" /I"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\..\..\..\extensions" /I..\Classes /I"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\..\..\..\extensions\LocalStorage" /I"D:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\external\emscripten\third_party\jni" /I"D:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\cocos2dx\platform\android\jni" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USE_MATH_DEFINES /D GL_GLEXT_PROTOTYPES /D CC_ENABLE_CHIPMUNK_INTEGRATION=1 /D COCOS2D_DEBUG=1 /D _CRT_SECURE_NO_WARNINGS /D _SCL_SECURE_NO_WARNINGS /D _USING_V110_SDK71_ /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug.win32\\" /Fd"Debug.win32\vc120.pdb" /Gd /TP /wd4267 /wd4251 /wd4244 /analyze- /errorReport:prompt ..\Classes\ScoreBoard.cpp
+         ScoreBoard.cpp
+       PreLinkEvent:
+         if not exist "E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32\" mkdir "E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32\"
+         xcopy /Y /Q "E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\..\..\..\external\libwebsockets\win32\lib\*.*" "E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32\"
+         :VCEnd
+         2 File(s) copied
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32\JumpFace.exe" /INCREMENTAL /NOLOGO /LIBPATH:"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32\\" libcocos2d.lib libCocosDenshion.lib opengl32.lib glew32.lib libExtensions.lib sqlite3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32\JumpFace.pdb" /SUBSYSTEM:WINDOWS,"5.01" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32\JumpFace.lib" /MACHINE:X86 /SAFESEH Debug.win32\AppDelegate.obj
+         Debug.win32\Bird.obj
+         Debug.win32\Ground.obj
+         Debug.win32\HelloWorldScene.obj
+         Debug.win32\JNIHelpers.obj
+         Debug.win32\Menu.obj
+         Debug.win32\NativeUtils.obj
+         Debug.win32\ScoreBoard.obj
+         Debug.win32\Splash.obj
+         Debug.win32\Walk.obj
+         Debug.win32\main.obj
+         "E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32\libcocos2d.lib"
+         "E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32\libCocosDenshion.lib"
+         "E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32\libExtensions.lib"
+         JumpFace.vcxproj -> E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\Debug.win32\JumpFace.exe
+     1>Done Building Project "E:\01.Data\11.Cocos\cocos2d-x-2.2.2\cocos2d-x-2.2.2\projects\JumpFace\proj.win32\JumpFace.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.80
