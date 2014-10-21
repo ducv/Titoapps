@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320.0dip"
+    android:layout_height="100.0dip"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10.0dip" >
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/leaving_game"
+        android:textColor="#ff000000"
+        android:textSize="20.0dip"
+        android:visibility="visible" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+             android:layout_weight="1"
+            android:id="@+id/id_quit"
+            android:layout_width="0dp"
+            android:layout_height="50.0dip"
+            android:background="@drawable/button_custom"
+            android:text="@string/quit" 
+            android:textSize="20.0dip"/>
+
+        <Button
+            android:id="@+id/id_save_quit"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="50.0dip"
+            android:background="@drawable/button_custom"
+            android:text="@string/save_and_quit" 
+            android:textSize="20.0dip"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_cancel"
+        android:layout_width="90.0dip"
+        android:layout_height="50.0dip"
+        android:background="@drawable/button_custom"
+        android:text="@string/cancel" 
+        android:textSize="20.0dip"/>
+
+</LinearLayout>

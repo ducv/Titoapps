@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5.0dip" >
+
+        <FrameLayout
+            android:layout_width="320.0dip"
+            android:layout_height="50.0dip"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/id_imageview1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/title" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:padding="5.0dip" >
+
+            <Button
+                android:id="@+id/id_single_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_custom"
+                android:text="@string/single_player"
+                android:textSize="20.0dip" />
+
+            <ImageView
+                android:id="@+id/id_icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_icon_01" />
+
+            <ImageView
+                android:id="@+id/id_icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:paddingRight="20.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_icon_01" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:padding="5.0dip" >
+
+            <Button
+                android:id="@+id/id_two_players_button"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_custom"
+                android:text="@string/two_player"
+                android:textSize="20.0dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_icon_02" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:paddingRight="20.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_icon_02" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:padding="5.0dip" >
+
+            <Button
+                android:id="@+id/id_load_game"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_custom"
+                android:text="@string/loadsavedgame"
+                android:textSize="20.0dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_icon_06" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:paddingRight="20.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_icon_06" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:padding="5.0dip" >
+
+            <Button
+                android:id="@+id/id_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_custom"
+                android:text="@string/settings"
+                android:textSize="20.0dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_icon_05" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:paddingRight="20.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_icon_05" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:padding="5.0dip" >
+
+            <Button
+                android:id="@+id/id_help"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/button_custom"
+                android:text="@string/how_to_play"
+                android:textSize="18.0dip" />
+
+            <ImageView
+                android:id="@+id/id_icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:paddingLeft="20.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_icon_04" />
+
+            <ImageView
+                android:id="@+id/id_icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right"
+                android:adjustViewBounds="true"
+                android:paddingRight="20.0dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/menu_icon_04" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

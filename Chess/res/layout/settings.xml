@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AIF_LinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="320.0dip"
+        android:layout_height="50.0dip"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/title" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10.0dip"
+        android:gravity="center"
+        android:text="@string/settings1"
+        android:textColor="#ffffffff"
+        android:textSize="24.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="60.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2.0"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.0" >
+
+                    <ImageButton
+                        android:id="@+id/Board_Left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="#00000000"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/src_arrow_left" />
+                </FrameLayout>
+
+                <FrameLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.0" >
+
+                    <ImageButton
+                        android:id="@+id/Board"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="#00000000"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/src_board1" />
+                </FrameLayout>
+
+                <FrameLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.0" >
+
+                    <ImageButton
+                        android:id="@+id/Board_Right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="#00000000"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/src_arrow_right" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="60.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:layout_marginRight="5.0dip"
+            android:layout_weight="1.0"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2.0"
+                android:orientation="horizontal" >
+
+                <FrameLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.0" >
+
+                    <ImageButton
+                        android:id="@+id/Pieces_Left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="#00000000"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/src_arrow_left" />
+                </FrameLayout>
+
+                <FrameLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="3.0" >
+
+                    <ImageButton
+                        android:id="@+id/Pieces"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="#00000000"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/src_board1" />
+                </FrameLayout>
+
+                <FrameLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="0.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2.0" >
+
+                    <ImageButton
+                        android:id="@+id/Pieces_Right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:background="#00000000"
+                        android:focusable="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/src_arrow_right" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="7.0"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/Settings_CheckBox01"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/checkbox_sfx"
+                android:textSize="16.0dip" />
+
+            <CheckBox
+                android:id="@+id/Settings_CheckBox08"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/checkbox_screenalwayson"
+                android:textSize="16.0dip" />
+
+            <CheckBox
+                android:id="@+id/Settings_CheckBox07"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_gravity="left"
+                android:layout_marginLeft="30.0dip"
+                android:layout_weight="1.0"
+                android:text="@string/checkbox_thinking"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <CheckBox
+                android:id="@+id/Settings_CheckBox03"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_gravity="left"
+                android:layout_weight="1.0"
+                android:text="@string/checkbox_transitions"
+                android:textSize="16.0dip" />
+
+            <CheckBox
+                android:id="@+id/Settings_CheckBox04"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_gravity="left"
+                android:layout_weight="1.0"
+                android:text="@string/checkbox_aids"
+                android:textSize="16.0dip" />
+
+            <CheckBox
+                android:id="@+id/Settings_CheckBox06"
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_gravity="left"
+                android:layout_weight="1.0"
+                android:text="@string/checkbox_timer"
+                android:textSize="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="2.0"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/Settings_CheckBox02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/checkbox_infobar"
+            android:textSize="16.0dip" />
+    </FrameLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="3.0"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Settings_ExitButton"
+            android:layout_width="100.0dip"
+            android:layout_height="60.0dip"
+            android:layout_gravity="center"
+            android:layout_marginRight="10.0dip"
+            android:text="@string/back" 
+            android:background="@drawable/button_custom"/>
+
+        <Button
+            android:id="@+id/Settings_RecommendButton"
+            android:layout_width="120.0dip"
+            android:layout_height="60.0dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/recommend"
+            android:background="@drawable/button_custom" />
+    </LinearLayout>
+
+</LinearLayout>

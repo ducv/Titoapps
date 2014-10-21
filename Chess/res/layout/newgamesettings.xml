@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="5.0dip" >
+
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="320.0dip"
+        android:layout_height="50.0dip"
+        android:layout_gravity="center" >
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/title" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6.0dip"
+        android:text="@string/match_settings"
+        android:textColor="#ffffffff"
+        android:textSize="18.0dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="7.0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="right|center"
+            android:paddingRight="10.0dip"
+            android:text="Player 1"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.0"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/id_edit_player1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:hint="Player 1"
+                android:textSize="14.0dip" 
+                android:maxLength="25"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="7.0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="right|center"
+            android:paddingRight="10.0dip"
+            android:text="Player 2"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.0"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/id_edit_player2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="true"
+                android:hint="Player 2"
+                android:textSize="14.0dip" 
+                android:maxLength="25"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="12.0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="right|center"
+            android:paddingRight="10.0dip"
+            android:text="@string/difficulty"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.0"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/Difficulty1"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_1" />
+
+                <ImageButton
+                    android:id="@+id/Difficulty2"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_2" />
+
+                <ImageButton
+                    android:id="@+id/Difficulty3"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_3" />
+
+                <ImageButton
+                    android:id="@+id/Difficulty4"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_4" />
+
+                <ImageButton
+                    android:id="@+id/Difficulty5"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.0"
+                android:orientation="horizontal" >
+
+                <ImageButton
+                    android:id="@+id/Difficulty6"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_6" />
+
+                <ImageButton
+                    android:id="@+id/Difficulty7"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_7" />
+
+                <ImageButton
+                    android:id="@+id/Difficulty8"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_8" />
+
+                <ImageButton
+                    android:id="@+id/Difficulty9"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_9" />
+
+                <ImageButton
+                    android:id="@+id/Difficulty10"
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_10" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="8.0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="right|center"
+            android:paddingRight="10.0dip"
+            android:text="White Handicap:"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.0"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/Handicap0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_handicap0" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/Handicap1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_handicap1" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/Handicap2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_handicap2" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/Handicap3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_handicap3" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/Handicap4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_handicap4" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="8.0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="right|center"
+            android:paddingRight="10.0dip"
+            android:text="Game Timers (mins):"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.0"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/GameTimer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_off" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/GameTimer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_gametimer1" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/GameTimer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_gametimer2" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/GameTimer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_gametimer3" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/GameTimer5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_gametimer4" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="8.0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="right|center"
+            android:paddingRight="10.0dip"
+            android:text="Move Timer (secs):"
+            android:textColor="#ffffffff"
+            android:textSize="14.0dip" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.0"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/MoveTimer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_movetimer1" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/MoveTimer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_movetimer2" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/MoveTimer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_movetimer3" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/MoveTimer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_movetimer4" />
+            </FrameLayout>
+
+            <FrameLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center" >
+
+                <ImageButton
+                    android:id="@+id/MoveTimer5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:background="#00000000"
+                    android:focusable="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/src_movetimer5" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0.0dip"
+        android:layout_marginTop="4.0dip"
+        android:layout_weight="6.0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/id_back"
+            android:layout_width="100.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="10.0dip"
+            android:background="@drawable/button_custom"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/id_play"
+            android:layout_width="100.0dip"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10.0dip"
+            android:background="@drawable/button_custom"
+            android:text="@string/start" />
+    </LinearLayout>
+
+</LinearLayout>

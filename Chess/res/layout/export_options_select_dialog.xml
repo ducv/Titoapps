@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical" android:layout_width="fill_parent"
+     android:layout_height="fill_parent"
+     android:padding="24dip">
+     
+     <RadioGroup android:layout_width="fill_parent"
+          android:layout_height="wrap_content" android:orientation="vertical"
+          android:id="@+id/radio_group_export_source">
+          <RadioButton android:checked="false"
+               android:text="Export all" android:id="@+id/radio_button_export_all" />
+          <RadioButton android:checked="false"
+               android:text="Export current" android:id="@+id/radio_button_export_current" />
+     </RadioGroup>
+     <CheckBox android:layout_width="fill_parent" 
+     		android:layout_height="wrap_content" android:orientation="vertical"
+     		android:id="@+id/delete_after_export_option"
+     		android:text="Delete after export"
+     		android:checked="false"/>
+     <CheckBox android:layout_width="fill_parent" 
+     		android:layout_height="wrap_content" android:orientation="vertical"
+     		android:id="@+id/append_to_exported_file"
+     		android:text="Append if exits"
+     		android:checked="false"/>
+     <LinearLayout android:orientation="horizontal"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+          <Button android:layout_width="100px"
+               android:layout_height="wrap_content" android:text="OK"
+               android:id="@+id/export_option_ok_button" />
+
+          <Button android:layout_width="100px"
+               android:layout_height="wrap_content" android:text="Cancel"
+               android:id="@+id/export_option_cancel_button" />
+     </LinearLayout> 
+     <!--
+     <LinearLayout android:orientation="horizontal"
+          android:layout_width="fill_parent"
+          android:layout_height="fill_parent">
+          <Button android:layout_width="100px"
+               android:layout_height="wrap_content" android:text="Answer"
+               id="OK" />
+
+          <Button android:layout_width="100px"
+               android:layout_height="wrap_content" android:text="Clear"
+               id="Concal" />
+     </LinearLayout>
+--></LinearLayout> 

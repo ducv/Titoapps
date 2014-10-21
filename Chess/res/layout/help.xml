@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:padding="5.0dip" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/AIF_LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5.0dip" >
+
+        <ImageView
+            android:id="@+id/Help_ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/title" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="24.0dip"
+            android:text="@string/helpmain1"
+            android:textColor="#ffffffff"
+            android:textSize="24.0dip" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/helpmain2"
+            android:textColor="#ffffffff"
+            android:textSize="16.0dip" />
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/Help_ExitButton"
+                android:layout_width="100.0dip"
+                android:layout_height="60.0dip"
+                android:layout_gravity="center"
+                android:text="@string/back"
+                android:background="@drawable/button_custom" />
+
+            <Button
+                android:id="@+id/Help_RulesButton"
+                android:layout_width="160.0dip"
+                android:layout_height="60.0dip"
+                android:layout_gravity="center"
+                android:text="@string/rules"
+                android:background="@drawable/button_custom" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

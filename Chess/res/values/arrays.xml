@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string-array name="themes">
+		<item>Black and White</item>
+		<item>Green and White</item>
+		<item>Classic Wood</item>
+	</string-array>
+	<string-array name="themes_value">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+		<string-array name="all_levels">
+		<item>Dễ</item>
+		<item>Bình thường</item>
+		<item>Khó</item>
+	</string-array>
+	<string-array name="level_values">
+		<item>1</item>
+		<item>2</item>
+		<item>3</item>
+	</string-array>
+</resources>

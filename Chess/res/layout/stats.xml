@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/AIF_LinearLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="320.0dip"
+        android:layout_height="48.0dip"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/title" />
+
+    <TextView
+        android:id="@+id/TextView00"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="6.0dip"
+        android:text="@string/stats_title"
+        android:textColor="#ffffffff"
+        android:textSize="24.0dip" />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="320.0dip"
+        android:layout_height="260.0dip"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/TextViewTitle01"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/stats_col1"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/TextView08"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/TextView09"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/TextView10"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="10"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/WinTextTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/stats_col2"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinText01"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinText02"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinText03"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinText04"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinText05"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinText06"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinText07"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinText08"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinText09"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinText10"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/DrawTextTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/stats_col3"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/DrawText01"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/DrawText02"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/DrawText03"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/DrawText04"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/DrawText05"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/DrawText06"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/DrawText07"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/DrawText08"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/DrawText09"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/DrawText10"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/LossTextTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/stats_col4"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/LossText01"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/LossText02"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/LossText03"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/LossText04"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/LossText05"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/LossText06"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/LossText07"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/LossText08"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/LossText09"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/LossText10"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/WinPCTTextTitle"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="@string/stats_col5"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinPCTText01"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinPCTText02"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinPCTText03"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinPCTText04"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinPCTText05"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinPCTText06"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinPCTText07"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinPCTText08"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinPCTText09"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+
+            <TextView
+                android:id="@+id/WinPCTText10"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffffff"
+                android:textSize="14.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="24.0dip"
+        android:layout_gravity="center"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:id="@+id/OverallPCT"
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="17.0dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5.0dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/Stats_ExitButton"
+            android:layout_width="100.0dip"
+            android:layout_height="50.0dip"
+            android:layout_marginRight="10.0dip"
+            android:text="@string/back" 
+            android:background="@drawable/button_custom"/>
+
+        <Button
+            android:id="@+id/Stats_ResetButton"
+            android:layout_width="120.0dip"
+            android:layout_height="50.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/reset" 
+            android:background="@drawable/button_custom"/>
+    </LinearLayout>
+
+</LinearLayout>

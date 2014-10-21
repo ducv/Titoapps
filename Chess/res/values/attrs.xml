@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <style parent="@android:style/Widget.ProgressBar" name="customProgressBar">
+  <item name="android:progressDrawable">@anim/progress_bar</item>
+ </style>
+</resources>

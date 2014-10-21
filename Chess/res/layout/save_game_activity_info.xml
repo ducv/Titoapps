@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout android:id="@+id/widget30"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<EditText android:id="@+id/white_player_name_text"
+		android:layout_width="180px" android:layout_height="wrap_content"
+		android:text="White player" android:textSize="18sp"
+		android:layout_x="109px" android:layout_y="217px">
+	</EditText>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="White:"
+		android:textSize="24dip" android:textStyle="bold" android:layout_x="22px"
+		android:layout_y="233px">
+	</TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Black:"
+		android:textSize="24dip" android:textStyle="bold" android:layout_x="26px"
+		android:layout_y="280px">
+	</TextView>
+	<EditText android:id="@+id/black_player_name_text"
+		android:layout_width="180px" android:layout_height="wrap_content"
+		android:text="Black player" android:textSize="18sp"
+		android:layout_x="107px" android:layout_y="269px">
+	</EditText>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Event:"
+		android:textSize="24dip" android:textStyle="bold" android:layout_x="26px"
+		android:layout_y="25px">
+	</TextView>
+	<EditText android:id="@+id/event_text" android:layout_width="180px"
+		android:layout_height="wrap_content" android:text="Event"
+		android:textSize="18sp" android:layout_x="109px" android:layout_y="7px">
+	</EditText>
+	<EditText android:id="@+id/site_text" android:layout_width="180px"
+		android:layout_height="wrap_content" android:text="Site"
+		android:textSize="18sp" android:layout_x="108px" android:layout_y="58px">
+	</EditText>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Site:"
+		android:textSize="24dip" android:textStyle="bold" android:layout_x="44px"
+		android:layout_y="74px">
+	</TextView>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Round:"
+		android:textSize="24dip" android:textStyle="bold" android:layout_x="11px"
+		android:layout_y="126px">
+	</TextView>
+	<EditText android:id="@+id/round_text" android:layout_width="180px"
+		android:layout_height="wrap_content" android:text="Round"
+		android:textSize="18sp" android:layout_x="108px" android:layout_y="111px">
+	</EditText>
+	<EditText android:id="@+id/date_text" android:layout_width="180px"
+		android:layout_height="wrap_content" android:text="YYYY.MM.DD"
+		android:textSize="18sp" android:layout_x="108px" android:layout_y="163px">
+	</EditText>
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="Date:"
+		android:textSize="24dip" android:textStyle="bold" android:layout_x="34px"
+		android:layout_y="180px">
+	</TextView>
+	<Button android:id="@+id/save_ok_button" android:layout_width="100dip"
+		android:layout_height="wrap_content" android:text="OK"
+		android:textStyle="bold" android:layout_x="162px" android:layout_y="325px">
+	</Button>
+	<Button android:id="@+id/save_cancel_button"
+		android:layout_width="100dip" android:layout_height="wrap_content"
+		android:text="Cancel" android:textStyle="bold" android:layout_x="54px"
+		android:layout_y="325px">
+	</Button>
+</AbsoluteLayout>

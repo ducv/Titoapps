@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:padding="10dip"
+    android:layout_height="140dip"
+    >
+    <com.fpt.chess.ui.VisualBoard
+    	android:id="@+id/preview_board"
+    	android:visibility="visible"
+    	android:gravity="center"
+    	android:layout_width="120dip"
+    	android:layout_height="120dip"
+    	android:padding="10dip">
+    </com.fpt.chess.ui.VisualBoard>
+    <TextView
+    	android:id="@+id/str_text"
+    	android:layout_width="wrap_content"
+    	android:layout_height="fill_parent">
+    </TextView>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="can_go_back_chooser"
+        android:summary="If check it on, you can go back any move"
+        android:title="Can go back move" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="sound"
+        android:summary="To turn on/off sound"
+        android:title="Sound" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="screen_on"
+        android:summary="If check it on, Screen always on when you're playing"
+        android:title="Screen always on" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="legal_lastmove"
+        android:summary="Show you the legal and last move"
+        android:title="Show legal and last move" />
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="time_show"
+        android:summary="Show time to think and finish a match"
+        android:title="Always show timers" />
+    <ListPreference
+        android:defaultValue="1"
+        android:dialogTitle="Board's theme"
+        android:entries="@array/themes"
+        android:entryValues="@array/themes_value"
+        android:key="boardtype"
+        android:positiveButtonText="OK"
+        android:summary="Click here to select the theme of the board "
+        android:title="Select theme" />
+<!--     <ListPreference -->
+<!--         android:defaultValue="1" -->
+<!--         android:dialogTitle="Choose level for a games" -->
+<!--         android:entries="@array/all_levels" -->
+<!--         android:entryValues="@array/level_values" -->
+<!--         android:key="game_level_chooser" -->
+<!--         android:positiveButtonText="OK" -->
+<!--         android:summary="Click here to select game level" -->
+<!--         android:title="Select Level" /> -->
+
+</PreferenceScreen>

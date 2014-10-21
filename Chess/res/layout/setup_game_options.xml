@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+<ScrollView android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Event:">
+		</TextView>
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/game_event"/>
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Site:">
+		</TextView>
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:id="@+id/game_site"/>
+
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Date:">
+		</TextView>
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:lines="1"
+			android:id="@+id/game_date"/>
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Round:">
+		</TextView>
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:lines="1"
+			android:id="@+id/game_round"/>
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="White's name:">
+		</TextView>
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:lines="1"
+			android:id="@+id/game_white_name"/>
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Black's name:">
+		</TextView>
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:lines="1"
+			android:id="@+id/game_black_name"/>
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="White elo:">
+		</TextView>
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:lines="1"
+			android:id="@+id/game_white_elo"/>
+		<TextView 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:text="Black elo:">
+		</TextView>
+		<EditText
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:lines="1"
+			android:id="@+id/game_black_elo"/>
+		<LinearLayout 
+			android:orientation="horizontal"
+			android:layout_gravity="center"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<Button android:id="@+id/setup_options_cancel"
+				android:layout_width="140dip"
+				android:layout_height="40dip"
+				android:text="Cancel"
+				android:minWidth="120dip"/>
+			<Button android:id="@+id/setup_options_ok"
+				android:layout_width="140dip"
+				android:layout_height="40dip"
+				android:text="OK"
+				android:minWidth="120dip"/>
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>
+</LinearLayout>

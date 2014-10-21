@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="30dip" >
+
+    <TableRow
+        android:layout_height="fill_parent"
+        android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/w_queen_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/wq3_"
+            android:text="Queen" >
+        </Button>
+
+        <Button
+            android:id="@+id/w_rook_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/wr3_"
+            android:text="Rook" >
+        </Button>
+    </TableRow>
+
+    <TableRow android:layout_gravity="center" >
+
+        <Button
+            android:id="@+id/w_bishop_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/wb3_"
+            android:text="Bishop" >
+        </Button>
+
+        <Button
+            android:id="@+id/w_knight_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/wn3_"
+            android:text="Knight" >
+        </Button>
+    </TableRow>
+
+</TableLayout>

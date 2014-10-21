@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">Chess</string>
+	<string name="game_over">Game Over</string>
+	<string name="game_menu">Please select...</string>
+	<string name="easy_level">Easy</string>
+	<string name="normal_level">Normal</string>
+	<string name="hard_level">Hard</string>
+	<string name="open_game">Open</string>
+	<string name="quit_game">Quit</string>
+	<string name="pgn_file_browser_name">PGN File Browser</string>
+	<string name="up_one_level">..[Go to upper directory]</string>
+	<string name="current_dir">.[Current directory]</string>
+	<string name="pref_about_text"></string>
+
+
+	<string name="undo_text">Undo</string>
+	<string name="checkbox_aids">Show Legal &amp; Last Moves</string>
+	<string name="player1">Player 1</string>
+	<string name="player2">Player 2</string>
+	<string name="player">You</string>
+	<string name="back">BACK</string>
+	<string name="start">PLAY</string>
+	<string name="sfx_off">Sound Off</string>
+	<string name="cpu">Your opponent</string>
+	<string name="crosspromMoveit">Elegant, original and brand new type of block
+		puzzle = one essential download!</string>
+	<string name="also_available">Also Available…</string>
+	<string name="single_player">Single Player</string>
+	<string name="two_player">Two Player</string>
+	<string name="rules">Game Rules</string>
+	<string name="helpmain1">HOW TO PLAY</string>
+	
+	<string name="reset">Reset Stats</string>
+	<string name="stats_title">Stats againts CPU</string>
+	
+	<string name="stats_col1">Difficulty</string>
+	<string name="stats_col3">Draw</string>
+	
+	<string name="stats_col4">Losses</string>
+	<string name="stats_col5">Win %</string>
+	<string name="stats_col2">Wins</string>
+	
+	
+
+
+	<string name="help1">GAME RULES</string>
+	<string name="settings1">GAME OPTIONS</string>
+	<string name="checkbox_sfx">Sound On</string>
+	<string name="checkbox_infobar">Hide Status Bar</string>
+	<string name="checkbox_transitions">Screen Transitions</string>
+
+	<string name="checkbox_screenalwayson">Screen Always On</string>
+	<string name="checkbox_thinking">Show CPU Thinking</string>
+	<string name="checkbox_timer">Always Show Timers</string>
+
+	<string name="recommend">"Recommend to a Friend"</string>
+	<string name="title1">Select an option to start:</string>
+	<string name="title2">© 2010 AI Factory Ltd</string>
+	<string name="settings">Options</string>
+	<string name="new_game">New Game</string>
+	<string name="hint">Hint</string>
+	<string name="how_to_play">"How To Play"</string>
+	<string name="how_to_play2">How To Play</string>
+	<string name="more_games">More Games</string>
+	<string name="ok">OK</string>
+	<string name="mail_subject">Try out this Android game!</string>
+	<string name="mail_body">"Try this great free Chess game!
+
+		http://market.android.com/details?id=uk.co.aifactory.chessfree
+		"
+	</string>
+	<string name="recommend_warning">You are now temporarily leaving the game to send a
+		recommendation using your preferred messaging application.</string>
+	<string name="mail_prompt">Select an Application:</string>
+	<string name="splat_confirm">Are you sure you wish to leave this match? You will
+		lose all unsaved progress.</string>
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+	<string name="match_settings">MATCH SETTINGS</string>
+	<string name="play_as">Play as:</string>
+	<string name="difficulty">Difficulty:</string>
+	<string name="play_to">Play to:</string>
+	<string name="loadsavedgame">Load Saved\n Game</string>
+	<string name="help2">"The game of Chess is a battle between two players, who take it in turns to move their pieces, white and black. Pieces are	moved either to an empty square or to a square occupied by an opponent piece which is then captured and removed from the board. The ultimate object of the game is to checkmate the opponent’s King so that it cannot escape, but this is preceded by careful manoeuvring of pieces designed to control space and gain material, and so strengthen the final attack. Traditionally the pieces in Chess represent aspects of	medieval society. The following sections describe how these pieces move."</string>
+	
+	<string name="help3">"The 8 Pawns symbolise labourers or soldiers. They	move in a forward direction, one square at a time. On its first move the Pawn can also optionally move forward two squares. These forward moves cannot be capture moves. Instead Pawns capture pieces in a forward-diagonal direction, but cannot otherwise move this way. When a Pawn reaches the other end of the board it can be changed for any other piece of its own colour, except the King of course. This is called promotion. Normally a Pawn is promoted to a Queen.	The Pawn has one extra move: the en-passant rule. This states that a double Pawn move can be immediately captured by an opponent's Pawn, if	that Pawn is adjacent to the double Pawn move after the move (on its 5th rank). In practice this means that the opponent can play the normal capture that would have been available if the Pawn had only advanced one square. On the board the en-passant capture moves the capturing Pawn behind the double-move Pawn, and then removes it."</string>
+	
+	<string name="help4">The Knight’s motion is unusual: it does not move in a straight line, but makes a double move, with a single straight and single diagonal move. This L-shaped move can be in any direction, giving 8 possible moves when the Knight is near the centre of the board. Similar to a real horse, Knights can jump over Chess pieces of	the same or opposite colour. If the Knight starts off on a light square, it will finish its move on a dark square.</string>
+	
+	<string name="help6">The Rook can move any number of squares in a horizontal or vertical direction. It cannot jump pieces as the Knight	can.</string>
+	
+	<string name="help5">The Bishop can move any number of squares in a	diagonal direction. It cannot jump pieces as the Knight can.</string>
+	<string name="help7">The Queen has the ability to move in a horizontal,	vertical or diagonal path across any number of spaces as long as she is not blocked. The Queen therefore combines the moves of the Rook and	Bishop. The Queen is a formidable piece, and will often be central in attacks.</string>
+	<string name="help8">"The King is the main object of your opponent's attacks. Once checkmated, the game is over! It can move in all	possible eight diagonal and horizontal directions, but only one square at a time. The King also has a special Castling move, where it can move two squares to left or right, with the Rook jumping over it to occupy the square on the other side of the King."</string>
+	<string name="help9">"This is only legal if the King and Rook have not moved previously, none of the squares between the Rook and King are blocked and none of the squares the King passes through are attacked by enemy pieces. The King needs to be protected, but can also become a powerful attacking piece. In the end game it will offer a formidable	attacking piece	against enemy Pawns. In simple mating endgames, it will	form part of the mating attack. When the King is being attacked directly by an opponent's piece, we say	that the King is in check. If the King is in check it must be made safe	immediately. There are 3 ways to get out of check:\n
+	1. The King may move to a square that is not being attacked	by an enemy	piece.\n
+	2. The piece that is attacking the King can be captured.\n
+	3. A piece may be moved between the King and the enemy piece to block the check. If the King is in check and cannot get out, then we say the King is checkmated and the game is lost."</string>
+
+	<string name="helpmain2">"(Scroll down for Chess rules) Before starting a game, you will be presented with a Match Settings screen. From here you can choose the side to play as, the CPU difficulty (1 for	beginners, and 10 for experts), the white handicap (a white piece removed to aid black), and the game timer parameters. There are two elements to the timers: \n\n
+	GAME TIMER determines the initial amount of time given to each player before the match. This counts down whilst	a player is thinking about their moves, and they will instantly lose the match if it reaches zero. \n\n
+	MOVE TIMER is the bonus time given to a player after making a move. Once a game has started, use the touch-screen or the dpad/joystick on the phone to select and move pieces. A piece is moved by first selecting it, then selecting a legal square to move to. The Undo button can be used to take back as many moves as you want. Player names, timers, taken pieces and CHECK notifications are displayed above and below the board. When the CPU is thinking about a move, an animation will play in the top right. Note that the higher the CPU difficulty, the longer the thinking times will be. If timers are active, the CPU will cut short its thinking if necessary.</string>
+	<string name="leaving_game">What now?</string>
+	<string name="quit">Quit</string>
+	<string name="save_and_quit">Save &amp; Quit</string>
+	<string name="cancel">Cancel</string>
+	
+
+</resources>
