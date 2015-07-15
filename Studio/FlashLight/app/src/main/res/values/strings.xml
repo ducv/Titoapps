@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TiTo Flashlight</string>
+    <string name="home_page">market://search?q=titoapps</string>
+
+    <string name="turn_on">TiTo Flashlight is turned on!</string>
+    <string name="click_to_turn_off">Click to turn it off</string>
+
+</resources>

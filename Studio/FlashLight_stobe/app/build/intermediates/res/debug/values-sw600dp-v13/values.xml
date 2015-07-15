@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/F:/08.Git/MyGit/Titoapps/Studio/FlashLight/app/src/main/res/values-sw600dp/dimens.xml -->
+    <eat-comment/>
+    <dimen name="battery_height">20dp</dimen>
+    <dimen name="battery_level_height">15dp</dimen>
+    <dimen name="battery_level_width">5dp</dimen>
+    <dimen name="battery_width">50dp</dimen>
+    <dimen name="brightness_panel_height">35dp</dimen>
+    <dimen name="brightness_panel_width">140dp</dimen>
+    <dimen name="brightness_width">20dp</dimen>
+    <dimen name="power_button">180dp</dimen>
+    <dimen name="radius">10dp</dimen>
+    <dimen name="rect_dimen">50dp</dimen>
+    <dimen name="sound_button">50dp</dimen>
+    <dimen name="stroke">5dp</dimen>
+    <dimen name="stroke_height">150dp</dimen>
+    <dimen name="text_size_big">25dp</dimen>
+    <dimen name="text_size_normal">20dp</dimen>
+    <dimen name="text_size_stroke">45dp</dimen>
+    <dimen name="widget_icondimen">96dp</dimen>
+</resources>

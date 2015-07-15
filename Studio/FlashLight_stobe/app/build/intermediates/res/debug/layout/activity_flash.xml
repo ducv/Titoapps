@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background">
+
+    <SurfaceView
+        android:id="@+id/mySurfaceView"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        />
+
+    <com.tito.crazy.flash.component.Battery
+        android:id="@+id/myBattery"
+        android:layout_width="@dimen/battery_width"
+        android:layout_height="@dimen/battery_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1126446154858350/6982443821"/>
+
+    <Button
+        android:id="@+id/myButtonPower"
+        android:layout_width="@dimen/power_button"
+        android:layout_height="@dimen/power_button"
+        android:layout_centerInParent="true"
+        android:background="@drawable/onoff_button"/>
+
+    <com.tito.crazy.flash.component.BrightnessLevel
+        android:id="@+id/myBrightnessLevel"
+        android:layout_width="@dimen/brightness_panel_width"
+        android:layout_height="@dimen/brightness_panel_height"
+        android:layout_above="@+id/myButtonPower"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+    <com.tito.crazy.flash.component.StrokeWheel
+        android:id="@+id/myStrokeWheel"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/stroke_height"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/rect_dimen"
+        android:layout_height="@dimen/rect_dimen"
+        android:layout_above="@+id/myStrokeWheel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/back_border_b"
+        android:gravity="center">
+
+        <com.tito.crazy.flash.component.TextViewCustom
+            android:id="@+id/myTextViewStroke"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_stroke"/>
+    </LinearLayout>
+
+    <ToggleButton
+        android:id="@+id/myToggleButtonSound"
+        android:layout_width="@dimen/sound_button"
+        android:layout_height="@dimen/sound_button"
+        android:layout_above="@+id/myStrokeWheel"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/sound_button"
+        android:textOff=""
+        android:textOn=""/>
+
+    <Button
+        android:id="@+id/myButtonMore"
+        android:layout_width="@dimen/sound_button"
+        android:layout_height="@dimen/sound_button"
+        android:layout_above="@+id/myToggleButtonSound"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/more_button"/>
+
+</RelativeLayout><!-- From: file:/F:/08.Git/MyGit/Titoapps/Studio/FlashLight/app/src/main/res/layout/activity_flash.xml -->

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="F:\08.Git\MyGit\Titoapps\Studio\FlashLight\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="F:\08.Git\MyGit\Titoapps\Studio\FlashLight\app\build\intermediates\pre-dexed\debug\classes-aa4de31f8d7267dcf9e296170b5444a080153597.jar" />
+    </item>
+    <item
+        jar="F:\08.Git\MyGit\Titoapps\Studio\FlashLight\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="F:\08.Git\MyGit\Titoapps\Studio\FlashLight\app\build\intermediates\pre-dexed\debug\classes-0d3949d3673bde2e54232b5dc7f57c81d834e895.jar" />
+    </item>
+    <item
+        jar="F:\08.Git\MyGit\Titoapps\Studio\FlashLight\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="F:\08.Git\MyGit\Titoapps\Studio\FlashLight\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-37618b4c0cbfa4b74f1529a58aaad8c6786df0b6.jar" />
+    </item>
+    <item
+        jar="H:\01.Develop\Soft\android-sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="F:\08.Git\MyGit\Titoapps\Studio\FlashLight\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-0b96429edfe5161e1ba0ae316a41f8a8501284f8.jar" />
+    </item>
+    <item
+        jar="F:\08.Git\MyGit\Titoapps\Studio\FlashLight\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="F:\08.Git\MyGit\Titoapps\Studio\FlashLight\app\build\intermediates\pre-dexed\debug\classes-9488af7cc0d4def3823d75799419c02cc9e5b0be.jar" />
+    </item>
+    <item
+        jar="F:\08.Git\MyGit\Titoapps\Studio\FlashLight\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="F:\08.Git\MyGit\Titoapps\Studio\FlashLight\app\build\intermediates\pre-dexed\debug\classes-0f8e91443ae4df03ab7924fb5a764851772e030a.jar" />
+    </item>
+
+</items>

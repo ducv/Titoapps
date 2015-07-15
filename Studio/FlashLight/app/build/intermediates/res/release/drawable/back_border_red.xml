@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="270.0"
+        android:centerColor="#ffcc0000"
+        android:centerY="0.6"
+        android:endColor="#ffbb0000"
+        android:startColor="#ffdd0000"
+        android:type="linear" />
+</shape><!-- From: file:/F:/08.Git/MyGit/Titoapps/Studio/FlashLight/app/src/main/res/drawable/back_border_red.xml -->

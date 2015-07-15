@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@drawable/appwidget_dark_bg_clickable"
+    android:layout_margin="5dp"
+    >
+
+    <ImageButton
+        android:id="@+id/ImageViewWidget"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_torch_widget"/>
+    <TextView
+        android:id="@+id/myTextViewStatus"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        />
+</LinearLayout><!-- From: file:/F:/08.Git/MyGit/Titoapps/Studio/FlashLight/app/src/main/res/layout/titoflashlightwidget.xml -->

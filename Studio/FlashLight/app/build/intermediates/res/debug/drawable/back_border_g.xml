@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke android:width="4.0dip" android:color="@color/border" />
+   <solid android:color="#ff00cc00"></solid>
+    <padding android:left="7.0dip" android:top="7.0dip" android:right="7.0dip" android:bottom="7.0dip" />
+    <corners android:radius="4.0dip" />
+</shape><!-- From: file:/F:/08.Git/MyGit/Titoapps/Studio/FlashLight/app/src/main/res/drawable/back_border_g.xml -->

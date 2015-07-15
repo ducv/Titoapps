@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_border_g"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <View
+        android:id="@+id/myViewBrightness1"
+        android:layout_width="@dimen/brightness_width"
+        android:layout_height="@dimen/brightness_width"
+        android:background="@drawable/back_border_black" />
+
+    <View
+        android:id="@+id/myViewBrightness2"
+        android:layout_width="@dimen/brightness_width"
+        android:layout_height="@dimen/brightness_width"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/back_border_black" />
+
+    <View
+        android:id="@+id/myViewBrightness3"
+        android:layout_width="@dimen/brightness_width"
+        android:layout_height="@dimen/brightness_width"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/back_border_black" />
+
+</LinearLayout>
