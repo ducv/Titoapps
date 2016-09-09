@@ -1,24 +1,29 @@
 package com.tito.crazy.flash;
 
 import android.app.Activity;
+import android.appwidget.AppWidgetManager;
 import android.content.BroadcastReceiver;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.net.Uri;
 import android.os.BatteryManager;
 import android.os.Bundle;
+import android.view.SurfaceView;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.widget.LinearLayout;
 import android.widget.ToggleButton;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.tito.crazy.flash.component.Battery;
 import com.tito.crazy.flash.component.BrightnessLevel;
+import com.tito.crazy.flash.service.ServiceCamera;
 import com.tito.crazy.flash.ultils.FlashUtils;
 import com.tito.crazy.flash.ultils.ManagePreferences;
 import com.tito.crazy.flash.ultils.SoundUltils;
@@ -26,58 +31,45 @@ import com.tito.crazy.flash.widget.TitoFlashLightWidgetProvider;
 
 public class FlashActivity extends Activity  {
 
-    //	private FlashUtils flashUtils;
+    	private FlashUtils flashUtils;
     private ToggleButton powerBt;
     private SoundUltils soundUltils;
-    private BrightnessLevel brightnessLevel;
-    private Battery battery;
     private ToggleButton soundTg;
-    private Button moreBt;
+    private LinearLayout moreBt;
+    private LinearLayout brightLl;
+    private SurfaceView surfaceView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flash);
+        soundUltils = SoundUltils.getInstance(this);
         initControl();
         AdView adView = (AdView) this.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         adView.loadAd(adRequest);
         IntentFilter batteryLevelFilter = new IntentFilter(Intent.ACTION_BATTERY_CHANGED);
-        registerReceiver(bateryBroadcastReceiver, batteryLevelFilter);
-        soundUltils = SoundUltils.getInstance(this);
+
     }
 
-    private BroadcastReceiver bateryBroadcastReceiver = new BroadcastReceiver() {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            int __rawlevel = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1);
-            int __scale = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1);
-            int __level = -1;
-            if (__rawlevel >= 0 && __scale > 0) {
-                __level = (__rawlevel * 100) / __scale;
-            }
-            battery.updateLevel(__level);
-        }
-    };
 
     private void initControl() {
         powerBt = (ToggleButton) findViewById(R.id.myButtonPower);
+        brightLl =(LinearLayout)findViewById(R.id.myLayout_bright);
         powerBt.setOnCheckedChangeListener(new OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 sendBroadCastToCameraService(isChecked);
-                brightnessLevel.setLevel(isChecked?FlashUtils
-                        .LEVEL_3:FlashUtils.LEVEL_0);
                 soundUltils.playSound(isChecked);
+                updateBackgroundBrightLayout(isChecked);
             }
         });
+        surfaceView = (SurfaceView)findViewById(R.id.preview);
 
-        brightnessLevel = (BrightnessLevel) findViewById(R.id.myBrightnessLevel);
-        battery = (Battery) findViewById(R.id.myBattery);
+
         soundTg = (ToggleButton) findViewById(R.id.myToggleButtonSound);
         soundTg.setChecked(ManagePreferences.getSound(this));
         powerBt.setChecked(ManagePreferences.getLightStatus(this));
-        brightnessLevel.setLevel(ManagePreferences.getLightStatus(this)?FlashUtils
-                .LEVEL_3:FlashUtils.LEVEL_0);
+        updateBackgroundBrightLayout(ManagePreferences.getLightStatus(this));
         soundTg.setOnCheckedChangeListener(new OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -85,7 +77,7 @@ public class FlashActivity extends Activity  {
 
             }
         });
-        moreBt = (Button) findViewById(R.id.myButtonMore);
+        moreBt = (LinearLayout) findViewById(R.id.myButtonMore);
         moreBt.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -94,19 +86,48 @@ public class FlashActivity extends Activity  {
         });
     }
 
+
+    private void updateBackgroundBrightLayout(boolean status){
+        if (status){
+            brightLl.setBackgroundResource(R.drawable.yellow_border);
+        }else{
+            brightLl.setBackgroundResource(R.drawable.yellow_stobe_border);
+        }
+    }
     private void sendBroadCastToCameraService(boolean status) {
-        Intent intent = new Intent(TitoFlashLightWidgetProvider.ACTION_BROADCAST);
+        if (status != ManagePreferences.getLightStatus(this)){
+            if (!ManagePreferences.getLightStatus(this)){
+                startService(this,false);
+            }else{
+                stopService(this);
+                ManagePreferences.setLightStatus(this, false);
+                updateWidget(this);
+            }
+        }
+    }
+
+    private void updateWidget(Context context) {
+        Intent intent = new Intent(context, TitoFlashLightWidgetProvider.class);
+        intent.setAction("android.appwidget.action.APPWIDGET_UPDATE");
+        int ids[] = AppWidgetManager.getInstance(context).getAppWidgetIds(new ComponentName(context, TitoFlashLightWidgetProvider.class));
+        intent.putExtra(AppWidgetManager.EXTRA_APPWIDGET_IDS, ids);
+        context.sendBroadcast(intent);
+
+    }
+    private void startService(Context context,boolean isWidget){
+        Intent cameraIntent = new Intent(context,ServiceCamera.class);
         Bundle bundle = new Bundle();
-        bundle.putBoolean("WIDGET", false);
-        bundle.putBoolean("STATUS", status);
-        intent.putExtras(bundle);
-        sendBroadcast(intent);
+        bundle.putBoolean("WIDGET",isWidget);
+        context.startService(cameraIntent);
+    }
+    private void stopService(Context context){
+        Intent cameraIntent = new Intent(context,ServiceCamera.class);
+        context.stopService(cameraIntent);
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unregisterReceiver(bateryBroadcastReceiver);
         sendBroadCastToCameraService(false);
     }
 
@@ -119,8 +140,7 @@ public class FlashActivity extends Activity  {
     @Override
     protected void onResume() {
         powerBt.setChecked(ManagePreferences.getLightStatus(this));
-        brightnessLevel.setLevel(ManagePreferences.getLightStatus(this)?FlashUtils
-                .LEVEL_3:FlashUtils.LEVEL_0);
+        updateBackgroundBrightLayout(ManagePreferences.getLightStatus(this));
         super.onResume();
     }
 

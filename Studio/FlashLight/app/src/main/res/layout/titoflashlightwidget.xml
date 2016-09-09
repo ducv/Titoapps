@@ -1,26 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
     android:gravity="center_vertical"
-    android:background="@drawable/appwidget_dark_bg_clickable"
+    android:background="@drawable/yellow_border_widget"
     android:layout_margin="5dp"
     >
 
-    <ImageButton
+    <ImageView
         android:id="@+id/ImageViewWidget"
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/ic_torch_widget"/>
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_torch_widget"
+        android:layout_centerInParent="true"/>
     <TextView
         android:id="@+id/myTextViewStatus"
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:gravity="center"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:textColor="@color/white"
-        android:textSize="30dp"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="3dp"
         />
-</LinearLayout>
+</RelativeLayout>

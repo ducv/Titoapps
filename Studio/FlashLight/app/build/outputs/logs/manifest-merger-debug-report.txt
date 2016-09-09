@@ -161,3 +161,17 @@ action#com.tito.crazy.flash.widget.RunWidgetBroadcast
 ADDED from AndroidManifest.xml:73:17
 	android:name
 		ADDED from AndroidManifest.xml:73:25
+receiver#com.tito.crazy.flash.service.AppReciever
+ADDED from AndroidManifest.xml:77:9
+	android:name
+		ADDED from AndroidManifest.xml:77:19
+intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.category.HOME
+ADDED from AndroidManifest.xml:78:13
+action#android.intent.action.BOOT_COMPLETED
+ADDED from AndroidManifest.xml:79:17
+	android:name
+		ADDED from AndroidManifest.xml:79:25
+category#android.intent.category.HOME
+ADDED from AndroidManifest.xml:81:17
+	android:name
+		ADDED from AndroidManifest.xml:81:27

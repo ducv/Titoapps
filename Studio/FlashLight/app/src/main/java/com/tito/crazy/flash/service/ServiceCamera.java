@@ -90,17 +90,6 @@ public class ServiceCamera extends Service {
     }
 
 
-
-
-    private void sendBroadCastToCameraService(boolean status) {
-        Intent intent = new Intent(TitoFlashLightWidgetProvider.ACTION_BROADCAST);
-        Bundle bundle = new Bundle();
-        bundle.putBoolean("WIDGET", true);
-        bundle.putBoolean("STATUS", status);
-        intent.putExtras(bundle);
-        sendBroadcast(intent);
-    }
-
     @Override
     public void onDestroy() {
         super.onDestroy();

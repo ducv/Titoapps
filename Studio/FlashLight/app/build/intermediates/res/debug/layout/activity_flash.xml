@@ -3,62 +3,83 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/background">
+                android:background="#ff271F12">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="50dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:gravity="center"
+       android:id="@+id/myLayout_bright"
+       android:background="@drawable/yellow_stobe_border">
+       <ImageView
+           android:layout_width="40dp"
+           android:layout_height="40dp"
+           android:src="@drawable/ic_torch_widget"/>
+       </LinearLayout>
 
-    <com.tito.crazy.flash.component.Battery
-        android:id="@+id/myBattery"
-        android:layout_width="@dimen/battery_width"
-        android:layout_height="@dimen/battery_height"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="10dp"
-        android:layout_marginTop="10dp"/>
+    <SurfaceView
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:id="@+id/preview"
+        />
 
     <ToggleButton
         android:id="@+id/myButtonPower"
         android:layout_width="@dimen/power_button"
         android:layout_height="@dimen/power_button"
-        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
         android:background="@drawable/power_button"
         android:textOff=""
         android:textOn=""/>
-
-    <com.tito.crazy.flash.component.BrightnessLevel
-        android:id="@+id/myBrightnessLevel"
-        android:layout_width="@dimen/brightness_panel_width"
-        android:layout_height="@dimen/brightness_panel_height"
-        android:layout_above="@+id/myButtonPower"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"/>
-
-
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
         ads:adSize="BANNER"
         ads:adUnitId="ca-app-pub-1126446154858350/6982443821"/>
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/myButtonPower"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/yellow_stobe_border"
+        android:orientation="horizontal"
+        android:gravity="center">
+
     <ToggleButton
         android:id="@+id/myToggleButtonSound"
-        android:layout_width="@dimen/sound_button"
-        android:layout_height="@dimen/sound_button"
-        android:layout_above="@id/adView"
-        android:layout_alignParentRight="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="5dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
         android:background="@drawable/sound_button"
         android:textOff=""
         android:textOn=""/>
-
-    <Button
+    </LinearLayout>
+    <LinearLayout
         android:id="@+id/myButtonMore"
-        android:layout_width="@dimen/sound_button"
-        android:layout_height="@dimen/sound_button"
-        android:layout_above="@+id/adView"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/myButtonPower"
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="5dp"
-        android:layout_marginLeft="5dp"
-        android:background="@drawable/more_button"/>
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/default_button"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_more"/>
+
+</LinearLayout>
+
+
 
 </RelativeLayout><!-- From: file:/F:/08.Git/MyGit/Titoapps/Studio/FlashLight/app/src/main/res/layout/activity_flash.xml -->
